@@ -1,0 +1,29 @@
+.ORIG x3000
+
+IN
+LD R3, N30
+ADD R0, R0, R3
+ADD R1, R0, x0
+
+IN
+ADD R0, R0, R3
+
+ADD R2, R0, R1
+
+LEA R0, MESG
+PUTS
+
+ADD R0, R2, x0
+LD R3, P30
+
+ADD R0, R0, R3
+OUT
+
+HALT
+
+; data
+MESG .STRINGz "The sum of the two inputs is: "
+N30 .FILL xFFD0
+P30 .FILL x0030
+
+.END

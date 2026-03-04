@@ -1,0 +1,17 @@
+; CIS11
+; Delano Leslie
+; Lab2 Ex3
+
+.ORIG x3000
+
+AND R0, R0, #0
+LD R0, NUM
+LD R2, ASCII
+ADD R0, R0, R2
+OUT
+HALT
+
+; data
+NUM .FILL x09
+ASCII .FILL x30
+.END
