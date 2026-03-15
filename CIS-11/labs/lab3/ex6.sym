@@ -1,0 +1,15 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	compare           300F
+//	neg               301B
+//	pos               301E
+//	eq                3021
+//	n                 3024
+//	p                 3036
+//	e                 304B
+//	reset             305C
+//	line1             305D
+//	line2             3066
+

@@ -1,0 +1,10 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	A                 300C
+//	B                 300D
+//	C                 300E
+//	T                 300F
+//	nine              3010
+
