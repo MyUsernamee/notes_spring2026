@@ -1,0 +1,10 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	p                 300A
+//	q                 300B
+//	s                 300C
+//	z                 300D
+//	offset            300E
+
