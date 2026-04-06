@@ -1,0 +1,14 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	nlt2              300B
+//	nlt2_else         300D
+//	loop              3014
+//	overflow          301E
+//	done              3023
+//	n                 3025
+//	Fn                3026
+//	oN                3027
+//	oFN               3028
+
