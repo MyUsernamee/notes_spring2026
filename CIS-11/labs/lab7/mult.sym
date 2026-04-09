@@ -1,8 +1,0 @@
-// Symbol table
-// Scope level 0:
-//	Symbol Name       Page Address
-//	----------------  ------------
-//	MULT              3F00
-//	loop_mult         3F03
-//	done              3F07
-

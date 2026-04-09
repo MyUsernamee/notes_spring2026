@@ -1,0 +1,121 @@
+; lab.lc3
+; Simple multiplication and division routines with unit tests.
+
+.ORIG X3000
+
+MAIN
+    LEA R6, STACK
+    STR R7, R6, #0
+    ADD R6, R6, #1
+    JSR TEST_MULT
+    JSR TEST_DIV
+    HALT
+
+TEST_MULT
+    STR R7, R6, #0
+    ADD R6, R6, #1 ; NEW STACK FRAME.
+    LD R1, X 
+    LD R2, Y
+
+    JSR MULT
+    LD R2, MULT_TEST_EXPECTED
+    AND R1, R1, #0
+    ADD R1, R1, R0
+    JSR ASSERT_EQ
+
+    ADD R6, R6, #-1
+    LDR R7, R6, #-1
+    RET
+
+TEST_DIV
+    STR R7, R6, #0
+    ADD R6, R6, #1 ; NEW STACK FRAME.
+
+    AND R1, R1, #0
+    AND R2, R2, #0 ; Clear R1, R2
+
+    ADD R1, R1, #15
+    ADD R2, R2, #3 ; R1 = 15, R2 = 3
+    
+    JSR DIV ; R0 = R1 / R2
+
+    AND R1, R1, #0
+    ADD R1, R1, R0 ; R1 = R0
+
+    AND R2, R2, #0 
+    ADD R2, R2, #5 ; R2 = #5
+
+    JSR ASSERT_EQ ; assert(R1 == 5)
+
+    ADD R6, R6, #-1
+    LDR R7, R6, #-1
+    RET
+
+ASSERT_EQ ; IF R1==R2, HALTS, AND PRINTS OUTPUT IF NOT.
+    STR R7, R6, #0
+    ADD R6, R6, #1 ; NEW STACK FRAME.
+    NOT R1, R1
+    ADD R1, R1, #1
+
+    ADD R2, R2, R1
+
+    BRZ SUCCESS
+    
+    LEA R0, ASSERT_MESSAGE
+    PUTS
+    HALT
+
+SUCCESS
+    ADD R6, R6, #-1
+    LDR R7, R6, #-1
+    RET
+
+; END ASSERT_EQ
+
+MULT ; MULTIPLIES TWO NUMBERS
+    STR R7, R6, #0
+    ADD R6, R6, #1 ; NEW STACK FRAME.
+
+    AND R0, R0, #0 ; CLEAR R0
+
+LOOP_MULT
+    ADD R1, R1, #-1
+    BRN DONE
+    ADD R0, R0, R2
+    BR LOOP_MULT
+    
+; end MULT
+
+DIV ; DIVIDES TO INTERGERS
+    STR R7, R6, #0
+
+    ADD R6, R6, #1 ; NEW STACK FRAME.
+    AND R0, R0, #0 ; CLEAR R0
+
+    NOT R2, R2
+    ADD R2, R2, #1 ; Invert R2
+
+LOOP_DIV
+    ADD R0, R0, #1
+    ADD R1, R1, R2
+    BRZ DONE
+    BRN DONE
+    BR LOOP_DIV
+    
+DONE 
+    ADD R6, R6, #-1
+    LDR R7, R6, #-1
+    RET
+
+; end MULT
+
+; DATA
+
+ASSERT_MESSAGE .STRINGZ "Assertion failed."
+MULT_TEST_EXPECTED .FILL #15
+X .FILL #3
+Y .FILL #5
+
+STACK .BLKW xFF
+
+.END
