@@ -1,0 +1,296 @@
+
+<!doctype HTML>
+<head>
+  <title>Tree-sitter Highlighting</title>
+  <style>
+    body {
+      font-family: monospace
+    }
+    .line-number {
+      user-select: none;
+      text-align: right;
+      color: rgba(27,31,35,.3);
+      padding: 0 10px;
+    }
+    .line {
+      white-space: pre;
+    }
+  </style>
+  <style>
+    .attribute { font-style: italic;color: #af0000; }
+    .comment { font-style: italic;color: #8a8a8a; }
+    .constant { color: #875f00; }
+    .constant.builtin { font-weight: bold;color: #875f00; }
+    .constructor { color: #af8700; }
+    .function { color: #005fd7; }
+    .function.builtin { font-weight: bold;color: #005fd7; }
+    .keyword { color: #5f00d7; }
+    .module { color: #af8700; }
+    .number { font-weight: bold;color: #875f00; }
+    .operator { font-weight: bold;color: #4e4e4e; }
+    .property { color: #af0000; }
+    .property.builtin { font-weight: bold;color: #af0000; }
+    .punctuation { color: #4e4e4e; }
+    .punctuation.bracket { color: #4e4e4e; }
+    .punctuation.delimiter { color: #4e4e4e; }
+    .punctuation.special { color: #4e4e4e; }
+    .string { color: #008700; }
+    .string.special { color: #008787; }
+    .tag { color: #000087; }
+    .type { color: #005f5f; }
+    .type.builtin { font-weight: bold;color: #005f5f; }
+    .variable { color: #d0d0d0; }
+    .variable.builtin { font-weight: bold;color: #d0d0d0; }
+    .variable.parameter { text-decoration: underline;color: #d0d0d0; }
+  </style>
+
+</head>
+<body>
+
+<table>
+<tr><td class=line-number>1</td><td class=line><span style='font-style: italic;color: #8a8a8a'>; lab.lc3</span>
+</td></tr>
+<tr><td class=line-number>2</td><td class=line><span style='font-style: italic;color: #8a8a8a'>; Simple multiplication and division routines with unit tests.</span>
+</td></tr>
+<tr><td class=line-number>3</td><td class=line>
+</td></tr>
+<tr><td class=line-number>4</td><td class=line><span style='color: #005fd7'>.ORIG</span> <span style='color: #005fd7'>X3000</span>
+</td></tr>
+<tr><td class=line-number>5</td><td class=line>
+</td></tr>
+<tr><td class=line-number>6</td><td class=line><span style='color: #005fd7'>MAIN</span>
+</td></tr>
+<tr><td class=line-number>7</td><td class=line>    <span style='color: #005fd7'>LEA</span><span style='color: #5f00d7'></span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='color: #005fd7'>STACK</span>
+</td></tr>
+<tr><td class=line-number>8</td><td class=line>    <span style='color: #5f00d7'>STR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>9</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#1</span>
+</td></tr>
+<tr><td class=line-number>10</td><td class=line>    <span style='color: #5f00d7'>JSR</span> <span style='color: #005fd7'>TEST_MULT</span>
+</td></tr>
+<tr><td class=line-number>11</td><td class=line>    <span style='color: #5f00d7'>JSR</span> <span style='color: #005fd7'>TEST_DIV</span>
+</td></tr>
+<tr><td class=line-number>12</td><td class=line>    <span style='color: #5f00d7'>HALT</span>
+</td></tr>
+<tr><td class=line-number>13</td><td class=line>
+</td></tr>
+<tr><td class=line-number>14</td><td class=line><span style='color: #005fd7'>TEST_MULT</span>
+</td></tr>
+<tr><td class=line-number>15</td><td class=line>    <span style='color: #5f00d7'>STR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>16</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#1</span> <span style='font-style: italic;color: #8a8a8a'>; NEW STACK FRAME.</span>
+</td></tr>
+<tr><td class=line-number>17</td><td class=line>    <span style='color: #5f00d7'>LD</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='color: #005fd7'>X</span> 
+</td></tr>
+<tr><td class=line-number>18</td><td class=line>    <span style='color: #5f00d7'>LD</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='color: #005fd7'>Y</span>
+</td></tr>
+<tr><td class=line-number>19</td><td class=line>
+</td></tr>
+<tr><td class=line-number>20</td><td class=line>    <span style='color: #5f00d7'>JSR</span> <span style='color: #005fd7'>MULT</span>
+</td></tr>
+<tr><td class=line-number>21</td><td class=line>    <span style='color: #5f00d7'>LD</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='color: #005fd7'>MULT_TEST_EXPECTED</span>
+</td></tr>
+<tr><td class=line-number>22</td><td class=line>    <span style='color: #5f00d7'>AND</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>23</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R0</span>
+</td></tr>
+<tr><td class=line-number>24</td><td class=line>    <span style='color: #5f00d7'>JSR</span> <span style='color: #005fd7'>ASSERT_EQ</span>
+</td></tr>
+<tr><td class=line-number>25</td><td class=line>
+</td></tr>
+<tr><td class=line-number>26</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>27</td><td class=line>    <span style='color: #5f00d7'>LDR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>28</td><td class=line>    <span style='color: #005fd7'>RET</span>
+</td></tr>
+<tr><td class=line-number>29</td><td class=line>
+</td></tr>
+<tr><td class=line-number>30</td><td class=line><span style='color: #005fd7'>TEST_DIV</span>
+</td></tr>
+<tr><td class=line-number>31</td><td class=line>    <span style='color: #5f00d7'>STR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>32</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#1</span> <span style='font-style: italic;color: #8a8a8a'>; NEW STACK FRAME.</span>
+</td></tr>
+<tr><td class=line-number>33</td><td class=line>
+</td></tr>
+<tr><td class=line-number>34</td><td class=line>    <span style='color: #5f00d7'>AND</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>35</td><td class=line>    <span style='color: #5f00d7'>AND</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #875f00'>#0</span> <span style='font-style: italic;color: #8a8a8a'>; Clear R1, R2</span>
+</td></tr>
+<tr><td class=line-number>36</td><td class=line>
+</td></tr>
+<tr><td class=line-number>37</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #875f00'>#15</span>
+</td></tr>
+<tr><td class=line-number>38</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #875f00'>#3</span> <span style='font-style: italic;color: #8a8a8a'>; R1 = 15, R2 = 3</span>
+</td></tr>
+<tr><td class=line-number>39</td><td class=line>    
+</td></tr>
+<tr><td class=line-number>40</td><td class=line>    <span style='color: #5f00d7'>JSR</span> <span style='color: #005fd7'>DIV</span> <span style='font-style: italic;color: #8a8a8a'>; R0 = R1 / R2</span>
+</td></tr>
+<tr><td class=line-number>41</td><td class=line>
+</td></tr>
+<tr><td class=line-number>42</td><td class=line>    <span style='color: #5f00d7'>AND</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>43</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R0</span> <span style='font-style: italic;color: #8a8a8a'>; R1 = R0</span>
+</td></tr>
+<tr><td class=line-number>44</td><td class=line>
+</td></tr>
+<tr><td class=line-number>45</td><td class=line>    <span style='color: #5f00d7'>AND</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #875f00'>#0</span> 
+</td></tr>
+<tr><td class=line-number>46</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #875f00'>#5</span> <span style='font-style: italic;color: #8a8a8a'>; R2 = #5</span>
+</td></tr>
+<tr><td class=line-number>47</td><td class=line>
+</td></tr>
+<tr><td class=line-number>48</td><td class=line>    <span style='color: #5f00d7'>JSR</span> <span style='color: #005fd7'>ASSERT_EQ</span> <span style='font-style: italic;color: #8a8a8a'>; assert(R1 == 5)</span>
+</td></tr>
+<tr><td class=line-number>49</td><td class=line>
+</td></tr>
+<tr><td class=line-number>50</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>51</td><td class=line>    <span style='color: #5f00d7'>LDR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>52</td><td class=line>    <span style='color: #005fd7'>RET</span>
+</td></tr>
+<tr><td class=line-number>53</td><td class=line>
+</td></tr>
+<tr><td class=line-number>54</td><td class=line><span style='color: #005fd7'>ASSERT_EQ</span> <span style='font-style: italic;color: #8a8a8a'>; IF R1==R2, HALTS, AND PRINTS OUTPUT IF NOT.</span>
+</td></tr>
+<tr><td class=line-number>55</td><td class=line>    <span style='color: #5f00d7'>STR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>56</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#1</span> <span style='font-style: italic;color: #8a8a8a'>; NEW STACK FRAME.</span>
+</td></tr>
+<tr><td class=line-number>57</td><td class=line>    <span style='color: #5f00d7'>NOT</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>
+</td></tr>
+<tr><td class=line-number>58</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #875f00'>#1</span>
+</td></tr>
+<tr><td class=line-number>59</td><td class=line>
+</td></tr>
+<tr><td class=line-number>60</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>
+</td></tr>
+<tr><td class=line-number>61</td><td class=line>
+</td></tr>
+<tr><td class=line-number>62</td><td class=line>    <span style='color: #5f00d7'>BRZ</span> <span style='color: #005fd7'>SUCCESS</span>
+</td></tr>
+<tr><td class=line-number>63</td><td class=line>    
+</td></tr>
+<tr><td class=line-number>64</td><td class=line>    <span style='color: #005fd7'>LEA</span><span style='color: #5f00d7'></span> <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='color: #005fd7'>ASSERT_MESSAGE</span>
+</td></tr>
+<tr><td class=line-number>65</td><td class=line>    <span style='color: #5f00d7'>PUTS</span>
+</td></tr>
+<tr><td class=line-number>66</td><td class=line>    <span style='color: #005fd7'>HALT</span>
+</td></tr>
+<tr><td class=line-number>67</td><td class=line>
+</td></tr>
+<tr><td class=line-number>68</td><td class=line><span style='color: #005fd7'>SUCCESS</span>
+</td></tr>
+<tr><td class=line-number>69</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>70</td><td class=line>    <span style='color: #5f00d7'>LDR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>71</td><td class=line>    <span style='color: #005fd7'>RET</span>
+</td></tr>
+<tr><td class=line-number>72</td><td class=line>
+</td></tr>
+<tr><td class=line-number>73</td><td class=line><span style='font-style: italic;color: #8a8a8a'>; END ASSERT_EQ</span>
+</td></tr>
+<tr><td class=line-number>74</td><td class=line>
+</td></tr>
+<tr><td class=line-number>75</td><td class=line><span style='color: #005fd7'>MULT</span> <span style='font-style: italic;color: #8a8a8a'>; MULTIPLIES TWO NUMBERS</span>
+</td></tr>
+<tr><td class=line-number>76</td><td class=line>    <span style='color: #5f00d7'>STR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>77</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#1</span> <span style='font-style: italic;color: #8a8a8a'>; NEW STACK FRAME.</span>
+</td></tr>
+<tr><td class=line-number>78</td><td class=line>
+</td></tr>
+<tr><td class=line-number>79</td><td class=line>    <span style='color: #5f00d7'>AND</span> <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #875f00'>#0</span> <span style='font-style: italic;color: #8a8a8a'>; CLEAR R0</span>
+</td></tr>
+<tr><td class=line-number>80</td><td class=line>
+</td></tr>
+<tr><td class=line-number>81</td><td class=line><span style='color: #005fd7'>LOOP_MULT</span>
+</td></tr>
+<tr><td class=line-number>82</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>83</td><td class=line>    <span style='color: #5f00d7'>BRN</span> <span style='color: #005fd7'>DONE</span>
+</td></tr>
+<tr><td class=line-number>84</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>
+</td></tr>
+<tr><td class=line-number>85</td><td class=line>    <span style='color: #5f00d7'>BR</span> <span style='color: #005fd7'>LOOP_MULT</span>
+</td></tr>
+<tr><td class=line-number>86</td><td class=line>    
+</td></tr>
+<tr><td class=line-number>87</td><td class=line><span style='font-style: italic;color: #8a8a8a'>; end MULT</span>
+</td></tr>
+<tr><td class=line-number>88</td><td class=line>
+</td></tr>
+<tr><td class=line-number>89</td><td class=line><span style='color: #005fd7'>DIV</span> <span style='font-style: italic;color: #8a8a8a'>; DIVIDES TO INTERGERS</span>
+</td></tr>
+<tr><td class=line-number>90</td><td class=line>    <span style='color: #5f00d7'>STR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#0</span>
+</td></tr>
+<tr><td class=line-number>91</td><td class=line>
+</td></tr>
+<tr><td class=line-number>92</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #875f00'>#1</span> <span style='font-style: italic;color: #8a8a8a'>; NEW STACK FRAME.</span>
+</td></tr>
+<tr><td class=line-number>93</td><td class=line>    <span style='color: #5f00d7'>AND</span> <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #875f00'>#0</span> <span style='font-style: italic;color: #8a8a8a'>; CLEAR R0</span>
+</td></tr>
+<tr><td class=line-number>94</td><td class=line>
+</td></tr>
+<tr><td class=line-number>95</td><td class=line>    <span style='color: #5f00d7'>NOT</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>
+</td></tr>
+<tr><td class=line-number>96</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>, <span style='font-weight: bold;color: #875f00'>#1</span> <span style='font-style: italic;color: #8a8a8a'>; Invert R2</span>
+</td></tr>
+<tr><td class=line-number>97</td><td class=line>
+</td></tr>
+<tr><td class=line-number>98</td><td class=line><span style='color: #005fd7'>LOOP_DIV</span>
+</td></tr>
+<tr><td class=line-number>99</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #d0d0d0'>R0</span>, <span style='font-weight: bold;color: #875f00'>#1</span>
+</td></tr>
+<tr><td class=line-number>100</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R1</span>, <span style='font-weight: bold;color: #d0d0d0'>R2</span>
+</td></tr>
+<tr><td class=line-number>101</td><td class=line>    <span style='color: #5f00d7'>BRZ</span> <span style='color: #005fd7'>DONE</span>
+</td></tr>
+<tr><td class=line-number>102</td><td class=line>    <span style='color: #5f00d7'>BRN</span> <span style='color: #005fd7'>DONE</span>
+</td></tr>
+<tr><td class=line-number>103</td><td class=line>    <span style='color: #5f00d7'>BR</span> <span style='color: #005fd7'>LOOP_DIV</span>
+</td></tr>
+<tr><td class=line-number>104</td><td class=line>    
+</td></tr>
+<tr><td class=line-number>105</td><td class=line><span style='color: #005fd7'>DONE</span> 
+</td></tr>
+<tr><td class=line-number>106</td><td class=line>    <span style='color: #5f00d7'>ADD</span> <span style='font-weight: bold;color: #d0d0d0'>R6</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>107</td><td class=line>    <span style='color: #5f00d7'>LDR</span> <span style='font-weight: bold;color: #d0d0d0'>R7</span>, <span style='font-weight: bold;color: #d0d0d0'>R6</span>, #-<span style='color: #005fd7'>1</span>
+</td></tr>
+<tr><td class=line-number>108</td><td class=line>    <span style='color: #005fd7'>RET</span>
+</td></tr>
+<tr><td class=line-number>109</td><td class=line>
+</td></tr>
+<tr><td class=line-number>110</td><td class=line><span style='font-style: italic;color: #8a8a8a'>; end MULT</span>
+</td></tr>
+<tr><td class=line-number>111</td><td class=line>
+</td></tr>
+<tr><td class=line-number>112</td><td class=line><span style='font-style: italic;color: #8a8a8a'>; DATA</span>
+</td></tr>
+<tr><td class=line-number>113</td><td class=line>
+</td></tr>
+<tr><td class=line-number>114</td><td class=line><span style='color: #005fd7'>ASSERT_MESSAGE</span> <span style='color: #005fd7'>.STRINGZ</span> <span style='color: #008700'>&quot;Assertion failed.&quot;</span>
+</td></tr>
+<tr><td class=line-number>115</td><td class=line><span style='color: #005fd7'>MULT_TEST_EXPECTED</span> <span style='color: #005fd7'>.FILL</span> <span style='font-weight: bold;color: #875f00'>#15</span>
+</td></tr>
+<tr><td class=line-number>116</td><td class=line><span style='color: #005fd7'>X</span> <span style='color: #005fd7'>.FILL</span> <span style='font-weight: bold;color: #875f00'>#3</span>
+</td></tr>
+<tr><td class=line-number>117</td><td class=line><span style='color: #005fd7'>Y</span> <span style='color: #005fd7'>.FILL</span> <span style='font-weight: bold;color: #875f00'>#5</span>
+</td></tr>
+<tr><td class=line-number>118</td><td class=line>
+</td></tr>
+<tr><td class=line-number>119</td><td class=line><span style='color: #005fd7'>STACK</span> <span style='color: #005fd7'>.BLKW</span> <span style='color: #005fd7'>xFF</span>
+</td></tr>
+<tr><td class=line-number>120</td><td class=line>
+</td></tr>
+<tr><td class=line-number>121</td><td class=line><span style='color: #005fd7'>.END</span>
+</td></tr>
+</table>
+
+</body>
+
