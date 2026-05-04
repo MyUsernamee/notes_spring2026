@@ -28,7 +28,7 @@ def get_includes(path: PathLike, tree: Tree) -> List[(Path, Location)]:
 
     return ret    
 
-def preprocess(paths: List[PathLike], source: bytes, parser: Parser) -> str:
+def preprocess(paths: List[PathLike], source: bytes, parser: Parser) -> (bytes, List[Error] | Error | None):
     logger.debug('Starting preprocessing...')
 
     if not isinstance(paths, list):
@@ -40,8 +40,10 @@ def preprocess(paths: List[PathLike], source: bytes, parser: Parser) -> str:
 
     if error:
         logger.error(f"\n{SEPARATOR}\nError while parsing file {paths[-1]}.\n  {str(error).replace('\n','\n\t')}\n{SEPARATOR}")
+        return source, error
 
     includes = get_includes(paths[-1], tree)
 
-# %%
+    # TODO: Implement includes
 
+    return source, error

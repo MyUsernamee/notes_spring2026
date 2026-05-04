@@ -47,10 +47,15 @@ def main() -> None:
     except e as Exception:
         raise Exception(f"Error loading source file {args.input}: {e}")
 
-    postprocess = preprocess(args.input, input_file, parser)
+    postprocess, error = preprocess(args.input, input_file, parser)
+    if error:
+        exit(1)
 
     if args.output_preprocessor:
         open(args.output_preprocessor, 'w').write(postprocess)
 
-    obj_file = assemble(args.input, input_file, parser)
+    obj_file, error = assemble(args.input, input_file, parser)
+    if error:
+        exit(1)
+
     open(args.output, 'wb').write(obj_file)
