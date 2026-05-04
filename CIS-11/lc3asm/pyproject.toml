@@ -1,0 +1,24 @@
+[project]
+name = "lc3asm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "delanoleslieprof@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "termcolor>=3.3.0",
+    "tree-sitter>=0.25.2",
+    "tree-sitter-lc3asm",
+]
+
+[project.scripts]
+lc3asm = "lc3asm:assembler_cli.main"
+
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+tree-sitter-lc3asm = { git = "https://github.com/MyUsernamee/tree-sitter-lc3asm.git", branch = "assembler" }

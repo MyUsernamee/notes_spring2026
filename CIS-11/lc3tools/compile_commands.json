@@ -1,0 +1,242 @@
+[
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/asm_types.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/asm_types.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/asm_types.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/asm_types.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/assembler.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/assembler.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/assembler.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/assembler.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/callback.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/callback.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/callback.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/callback.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/converter.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/converter.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/converter.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/converter.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/decoder.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/decoder.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/decoder.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/decoder.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/device.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/device.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/device.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/device.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/encoder.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/encoder.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/encoder.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/encoder.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/event.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/event.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/event.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/event.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/func_type.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/func_type.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/func_type.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/func_type.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/interface.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/interface.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/interface.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/interface.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/intex.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/intex.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/intex.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/intex.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/isa_abstract.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/isa_abstract.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/isa_abstract.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/isa_abstract.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/isa_encoding.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/isa_encoding.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/isa_encoding.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/isa_encoding.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/isa_impl.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/isa_impl.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/isa_impl.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/isa_impl.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/lc3os.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/lc3os.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/lc3os.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/lc3os.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/mem.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/mem.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/mem.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/mem.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/simulator.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/simulator.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/simulator.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/simulator.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/state.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/state.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/state.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/state.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/tokenizer.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/tokenizer.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/tokenizer.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/tokenizer.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/uop.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/uop.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/uop.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/uop.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/backend",
+  "command": "/usr/lib64/ccache/c++    -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/lc3core.dir/utils.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/utils.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/backend/utils.cpp",
+  "output": "src/backend/CMakeFiles/lc3core.dir/utils.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/common",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/../backend  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/common.dir/common.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/common.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/common.cpp",
+  "output": "src/common/CMakeFiles/common.dir/common.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/common",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/../backend  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/common.dir/console_inputter.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/console_inputter.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/console_inputter.cpp",
+  "output": "src/common/CMakeFiles/common.dir/console_inputter.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/common",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/../backend  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/common.dir/console_printer.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/console_printer.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/common/console_printer.cpp",
+  "output": "src/common/CMakeFiles/common.dir/console_printer.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/cli",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/../common  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/assembler.dir/asm_main.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/asm_main.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/asm_main.cpp",
+  "output": "src/cli/CMakeFiles/assembler.dir/asm_main.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/cli",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/../common  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/simulator.dir/sim_main.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/sim_main.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/cli/sim_main.cpp",
+  "output": "src/cli/CMakeFiles/simulator.dir/sim_main.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/framework.dir/framework1.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/framework1.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/framework1.cpp",
+  "output": "src/test/CMakeFiles/framework.dir/framework1.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/framework.dir/framework2.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/framework2.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/framework2.cpp",
+  "output": "src/test/CMakeFiles/framework.dir/framework2.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/framework.dir/framework_common.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/framework_common.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/framework_common.cpp",
+  "output": "src/test/CMakeFiles/framework.dir/framework_common.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/binsearch.dir/tests/samples/binsearch.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/binsearch.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/binsearch.cpp",
+  "output": "src/test/CMakeFiles/binsearch.dir/tests/samples/binsearch.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/interrupt1.dir/tests/samples/interrupt1.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/interrupt1.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/interrupt1.cpp",
+  "output": "src/test/CMakeFiles/interrupt1.dir/tests/samples/interrupt1.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/interrupt2.dir/tests/samples/interrupt2.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/interrupt2.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/interrupt2.cpp",
+  "output": "src/test/CMakeFiles/interrupt2.dir/tests/samples/interrupt2.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/intersection.dir/tests/samples/intersection.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/intersection.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/intersection.cpp",
+  "output": "src/test/CMakeFiles/intersection.dir/tests/samples/intersection.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/nim.dir/tests/samples/nim.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/nim.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/nim.cpp",
+  "output": "src/test/CMakeFiles/nim.dir/tests/samples/nim.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/polyroot.dir/tests/samples/polyroot.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/polyroot.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/polyroot.cpp",
+  "output": "src/test/CMakeFiles/polyroot.dir/tests/samples/polyroot.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/pow2.dir/tests/samples/pow2.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/pow2.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/pow2.cpp",
+  "output": "src/test/CMakeFiles/pow2.dir/tests/samples/pow2.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/rotate.dir/tests/samples/rotate.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/rotate.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/rotate.cpp",
+  "output": "src/test/CMakeFiles/rotate.dir/tests/samples/rotate.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/shift.dir/tests/samples/shift.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/shift.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/shift.cpp",
+  "output": "src/test/CMakeFiles/shift.dir/tests/samples/shift.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/sort.dir/tests/samples/sort.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/sort.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/sort.cpp",
+  "output": "src/test/CMakeFiles/sort.dir/tests/samples/sort.cpp.o"
+},
+{
+  "directory": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/build/src/test",
+  "command": "/usr/lib64/ccache/c++  -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../backend -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/../common -I/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/.  -std=c++11 -fPIC -O3 -DNDEBUG -w -O2   -include cstdint -o CMakeFiles/tutorial_grader.dir/tests/samples/tutorial_grader.cpp.o -c /home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/tutorial_grader.cpp",
+  "file": "/home/dihydromonoxide/Documents/notes_spring2026/CIS-11/lc3tools/src/test/tests/samples/tutorial_grader.cpp",
+  "output": "src/test/CMakeFiles/tutorial_grader.dir/tests/samples/tutorial_grader.cpp.o"
+}
+]

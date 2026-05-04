@@ -1,0 +1,6 @@
+.ORIG x3000
+ADD R0, abab, abab, abab 
+.INCLUDE "test_include.asm"
+
+.END
+

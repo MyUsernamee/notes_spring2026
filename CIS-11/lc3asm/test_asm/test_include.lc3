@@ -1,0 +1,6 @@
+
+LEA R0, TEST_MSG
+PUTS
+HALT
+
+TEST_MSG .STRINGZ "This is from an included file :)"
