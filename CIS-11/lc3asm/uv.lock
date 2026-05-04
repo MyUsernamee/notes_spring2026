@@ -1,0 +1,19 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "lc3d"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "tree-sitter-lc3asm" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "tree-sitter-lc3asm", git = "https://github.com/MyUsernamee/tree-sitter-lc3asm.git?branch=assembler" }]
+
+[[package]]
+name = "tree-sitter-lc3asm"
+version = "0.1.0"
+source = { git = "https://github.com/MyUsernamee/tree-sitter-lc3asm.git?branch=assembler#3b3fe6c5af4553ddf751c0bda5af6a42b1767277" }
