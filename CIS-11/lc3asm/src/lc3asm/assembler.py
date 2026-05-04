@@ -23,30 +23,35 @@ class ObjFile:
     memory_locations: List[Instruction]
 
 def get_identifiers(state: AssemblerState):
-    logger.debug('Getting identifiers for %s', path)
+    logger.debug('Getting identifiers for %s', state.path)
 
-    query = Query("""
+    query = Query(LC3_LANGUAGE, """
         (statement (identifier) @identifier .)
     """)
-    cursor = QueryCursor(LC3_LANGUAGE, query)
-    captures = cursor.capture(state.tree)
+    cursor = QueryCursor(query)
+    captures = cursor.captures(state.tree.root_node)
 
-    logger.debug('Ruan identifier capture, got %s...', captures)
+    logger.debug('Ran identifier capture, got %s...', captures)
+
+    for capture in captures['identifier']:
+        logger.debug('Adding %s to the symbol_table...', capture.text)
+        state.symbol_table[capture.text] = 0
 
 def assemble(path: PathLike, source: bytes, parser: Tree) -> (bytes, List[Error] | Error | None):
     logger.debug('Starting assembler...')
-    tree, error = parse_tree()
+    tree, error = parse_tree(path, source, parser)
 
     if error:
         logger.error(f"\n{SEPARATOR}\nError while parsing file {paths[-1]}.\n  {str(error).replace('\n','\n\t')}\n{SEPARATOR}")
         return source, error
 
-    state = AssemblerState(path, source, tree, {})
+    state = AssemblerState(path, source, tree, {}, ObjFile(path, 0, []))
 
     errors = get_identifiers(state)
     if errors:
-        return (source, error)
+        return (source, errors)
 
+    return (b'', errors)
 
 
 
