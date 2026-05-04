@@ -1,0 +1,120 @@
+
+.ORIG x3000
+
+main:
+    ; Clear registers.
+    AND R0, R0, #0
+    AND R1, R1, #0
+    AND R2, R2, #0
+    AND R3, R3, #0
+    AND R4, R4, #0
+    AND R5, R5, #0
+    AND R6, R6, #0
+
+    LDI R3, MONTH_LOCATION
+    LDI R4, DAY_LOCATION
+    LDI R5, YEAR_LOCATION
+
+    ADD R0, R5, #0
+    JSR CALC_D ; R0 = D
+    ADD R6, R0, #0
+    
+    ADD R0, R5, #0
+    BR CALC_C ; R0 = C
+    ADD R5, R0, #0
+
+    ; R3 = m
+    ; R4 = k
+    ; R5 = D
+    ; R6 = C
+
+    ADD R0, R3, #0
+    AND R1, R1, #0
+    ADD R1, R1, #13
+    JSR MULT
+    ADD R0, R2, #-1 ; R0 = 13m-1
+
+    AND R1, R1, #0
+    ADD R1, R1, #5
+    JSR DIV ; R2 = R0 / R1
+    ADD R0, R2, #0 ; R0, (13m - 1) / 5
+
+    RSH R1, R5, #2
+    RSH R2, R6, #2
+    LSH R3, R6, #1
+
+    NOT R3, R3
+    ADD R3, R3, #1
+
+    ADD R0, R0, R4
+    ADD R0, R0, R1
+    ADD R0, R0, R2
+    ADD R0, R0, R3
+    ADD R0, R0, R5
+
+    AND R1, R1, #0
+    ADD R1, R1, #7
+    JSR DIV
+    
+    STI R0, OUTPUT_LOCATION
+    LEA R1, DAYS
+    ADD R0, R0, R1
+    PUTS
+
+
+CALC_D:
+    
+
+
+MONTH_LOCATION .FILL x31F0
+DAY_LOCATION .FILL x31F0
+YEAR_LOCATION .FILL x31F2
+OUTPUT_LOCATION .FILL x31F3
+SAVE_R0 .FILL x0
+SAVE_R1 .FILL x0
+SAVE_R2 .FILL x0
+SAVE_R3 .FILL x0
+SAVE_R4 .FILL x0
+
+DAYS    .STRINGZ "Sunday   "
+        .STRINGZ "Monday   "
+        .STRINGZ "Tuesday  "
+        .STRINGZ "Wednesday"
+        .STRINGZ "Thursday "
+        .STRINGZ "Friday   "
+        .STRINGZ "Saturday "
+
+MULT
+    AND R2, R2, #0 ; R2 = 0
+    mult_loop:
+        ADD R0, R0, #-1 ; R0 = R0 - 1
+        BRz mult_done
+        ADD R2, R2, R1 ; R2 += R1
+        BR mult_loop
+
+    mult_done:
+        RET
+
+DIV
+    AND R2, R2, #0 ; R2 = 0
+
+    NOT R1, R1 ; R1 *= -1
+    ADD R1, R1, #1
+
+    div_loop:
+        ADD R0, R0, R1
+        BRn div_done
+        BRz div_zero
+        ADD R2, R2, #1
+        BR div_loop
+    
+    div_zero:
+        ADD R2, R2, #1
+
+    div_done:
+        NOT R0, R0
+        ADD R0, R0, #1 ; R0 *= -1
+        RET
+
+.END
+
