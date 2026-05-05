@@ -21,4 +21,4 @@ requires = ["uv_build>=0.11.6,<0.12.0"]
 build-backend = "uv_build"
 
 [tool.uv.sources]
-tree-sitter-lc3asm = { git = "https://github.com/MyUsernamee/tree-sitter-lc3asm.git", branch = "assembler" }
+tree-sitter-lc3asm = { path = "./dependencies/tree-sitter-lc3asm" }
