@@ -37,11 +37,21 @@ class Operand:
 @dataclass
 class Instruction:
     opcode: OpCode    
-    operands: (Operand | None, Operand | None, Operand | None)
+    operands: tuple[Operand | None]
 
     def __str__(self):
         ret = f'{self.opcode.name} '
-        ret += ", ".join(self.opeands)
+        ret += ", ".join(self.operands)
+        return ret
+
+@dataclass
+class UnlinkedInstruction:
+    opcode: OpCode
+    operands: tuple[bytes | Operand | None]
+
+    def __str__(self):
+        ret = f'(UNLINKED) {self.opcode.name} '
+        ret += ", ".join(self.operands)
         return ret
 
 def encode(instruction: Instruction) -> (bytes, int):

@@ -54,7 +54,7 @@ def main() -> None:
     if args.output_preprocessor:
         open(args.output_preprocessor, 'w').write(postprocess)
 
-    obj_file, error = assemble(args.input, input_file, parser)
+    obj_file, ir_file, error = assemble(args.input, input_file, parser)
     if error:
         exit(1)
 

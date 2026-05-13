@@ -14,6 +14,7 @@ logger = logger.getChild('error')
 class ErrorType(Enum):
     UnkownError = auto()
     SyntaxError = auto()
+    AssemblerError = auto()
 
 @dataclass
 class Location:
